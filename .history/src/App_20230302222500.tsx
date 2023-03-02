@@ -48,13 +48,13 @@ const addTodo = (description:string, assigned:string) => {
     <div className="card-header">YourTodos</div>
     <div className="card-body">
      <TodosTable todos={todos} deleteTodo={deleteTodo}/>
-     <button className="btn btn-primary" onClick={() => setShowAddNewTodoForm(!showAddNewTodoForm)}>{
+     <button className="btn btn-primary">New Todo</button>
+     {
        showAddNewTodoForm ? "Close New Todo" : "New Todo"
      }
-     </button>
-     {
-       showAddNewTodoForm && <NewTodoForm addTodo = {addTodo}/>
-     }
+     <NewTodoForm addTodo = {addTodo} 
+     
+     />
     </div>
     </div>
   </div>

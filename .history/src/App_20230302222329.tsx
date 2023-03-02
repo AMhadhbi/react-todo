@@ -41,20 +41,17 @@ const addTodo = (description:string, assigned:string) => {
       }
   }
   
-  const [showAddNewTodoForm, setShowAddNewTodoForm] = useState(false);
+  const [showAddNewTodoForm, setShowAddNewTodoForm] = useState(false)
   return (
   <div className="container mt-5">
     <div className="card">
     <div className="card-header">YourTodos</div>
     <div className="card-body">
      <TodosTable todos={todos} deleteTodo={deleteTodo}/>
-     <button className="btn btn-primary" onClick={() => setShowAddNewTodoForm(!showAddNewTodoForm)}>{
-       showAddNewTodoForm ? "Close New Todo" : "New Todo"
-     }
-     </button>
-     {
-       showAddNewTodoForm && <NewTodoForm addTodo = {addTodo}/>
-     }
+     <button className="btn btn-primary">New Todo</button>
+     <NewTodoForm addTodo = {addTodo} 
+     
+     />
     </div>
     </div>
   </div>
