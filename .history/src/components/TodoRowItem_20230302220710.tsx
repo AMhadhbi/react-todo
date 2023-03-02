@@ -13,7 +13,7 @@ deleteTodo : Function;
 
 
     return (
-        <tr onClick={handleDeleteTodo} style={{cursor: 'pointer'}}>
+        <tr onClick={handleDeleteTodo} style={{}}>
             <th scope="row">{props.rowNumber}</th>
             <td scope="row">{props.rowDescription}</td>
             <td scope="row">{props.rowAssigned}</td>

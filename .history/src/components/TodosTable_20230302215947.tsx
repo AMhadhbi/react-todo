@@ -6,7 +6,7 @@ import { TodoRowItem } from "./TodoRowItem";
 export const TodosTable: React.FC<{
     todos : Todo[],
     deleteTodo: Function
-}> = (props) => {
+}> = (todos, ) => {
     return (
 <table className="table table-primary table-hover">
         <thead>

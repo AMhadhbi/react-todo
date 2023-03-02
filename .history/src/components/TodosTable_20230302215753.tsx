@@ -4,8 +4,7 @@ import { TodoRowItem } from "./TodoRowItem";
 
 
 export const TodosTable: React.FC<{
-    todos : Todo[],
-    deleteTodo: Function
+    todos : Todo[];
 }> = (props) => {
     return (
 <table className="table table-primary table-hover">
@@ -23,7 +22,6 @@ export const TodosTable: React.FC<{
               rowNumber={item.rowNumber}
               rowDescription={item.rowDescription}
               rowAssigned={item.rowAssigned}
-              deleteTodo={props.deleteTodo}
               />)
           }
         </tbody>

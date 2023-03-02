@@ -23,7 +23,6 @@ export const TodosTable: React.FC<{
               rowNumber={item.rowNumber}
               rowDescription={item.rowDescription}
               rowAssigned={item.rowAssigned}
-              deleteTodo={props.deleteTodo}
               />)
           }
         </tbody>

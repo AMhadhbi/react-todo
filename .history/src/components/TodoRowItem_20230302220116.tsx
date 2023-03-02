@@ -4,16 +4,10 @@ import { FC } from "react";
 rowNumber: number,
 rowDescription: string,
 rowAssigned : string,
-deleteTodo : Function;
+deleteTodo : Function
 }> = (props) => {
-
-    const handleDeleteTodo = () => {
-        props.deleteTodo (props.rowNumber);
-    }
-
-
     return (
-        <tr onClick={handleDeleteTodo} style={{cursor: 'pointer'}}>
+        <tr>
             <th scope="row">{props.rowNumber}</th>
             <td scope="row">{props.rowDescription}</td>
             <td scope="row">{props.rowAssigned}</td>

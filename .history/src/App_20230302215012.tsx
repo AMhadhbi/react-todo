@@ -34,22 +34,15 @@ const addTodo = (description:string, assigned:string) => {
   setTodos([...todos, newTodo]);
 }
 
-  const deleteTodo = (rowNumber : number) => {
-      let filteredTodos = todos.filter((todo) => todo.rowNumber !== rowNumber);
-      if (filteredTodos) {
-        setTodos(filteredTodos);
-      }
-  }
+  const deleteTodo = ()
   return (
   <div className="container mt-5">
     <div className="card">
     <div className="card-header">YourTodos</div>
     <div className="card-body">
-     <TodosTable todos={todos} deleteTodo={deleteTodo}/>
+     <TodosTable todos={todos}/>
      <button className="btn btn-primary">New Todo</button>
-     <NewTodoForm addTodo = {addTodo} 
-     
-     />
+     <NewTodoForm addTodo = {addTodo}/>
     </div>
     </div>
   </div>

@@ -45,7 +45,7 @@ const addTodo = (description:string, assigned:string) => {
     <div className="card">
     <div className="card-header">YourTodos</div>
     <div className="card-body">
-     <TodosTable todos={todos} deleteTodo={deleteTodo}/>
+     <TodosTable todos={todos} deleteTodo={/>
      <button className="btn btn-primary">New Todo</button>
      <NewTodoForm addTodo = {addTodo} 
      
