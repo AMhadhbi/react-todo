@@ -29,9 +29,9 @@ const addTodo = (description:string, assigned:string) => {
       rowNumber,
       rowDescription:description,
       rowAssigned:assigned
-  };
+  }
 
-  setTodos([...todos, newTodo]);
+todos.push(newTodo);
 
 }
   return (

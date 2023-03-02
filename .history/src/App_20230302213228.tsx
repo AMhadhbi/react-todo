@@ -31,7 +31,7 @@ const addTodo = (description:string, assigned:string) => {
       rowAssigned:assigned
   };
 
-  setTodos([...todos, newTodo]);
+  setTodos();
 
 }
   return (

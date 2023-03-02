@@ -6,10 +6,10 @@ import { TodosTable } from './components/TodosTable';
 import './App.css';
 
 function App() {
-  // // const todos = [
-  //   {rowNumber: 1, rowDescription : "play football", rowAssigned: 'Achraf'},
-  //   {rowNumber: 2, rowDescription : "Learn React", rowAssigned: 'Nizar'},
-  // ];
+  // const todos = [
+    {rowNumber: 1, rowDescription : "play football", rowAssigned: 'Achraf'},
+    {rowNumber: 2, rowDescription : "Learn React", rowAssigned: 'Nizar'},
+  ];
 
 const [todos, setTodos] = useState([
   {rowNumber: 1, rowDescription : "play football", rowAssigned: 'Achraf'},
@@ -29,9 +29,9 @@ const addTodo = (description:string, assigned:string) => {
       rowNumber,
       rowDescription:description,
       rowAssigned:assigned
-  };
+  }
 
-  setTodos([...todos, newTodo]);
+todos.push(newTodo);
 
 }
   return (

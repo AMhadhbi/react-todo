@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { NewTodoForm } from './components/NewTodoForm';
 import { TodosTable } from './components/TodosTable';
@@ -6,15 +6,12 @@ import { TodosTable } from './components/TodosTable';
 import './App.css';
 
 function App() {
-  // // const todos = [
+  // const todos = [
   //   {rowNumber: 1, rowDescription : "play football", rowAssigned: 'Achraf'},
   //   {rowNumber: 2, rowDescription : "Learn React", rowAssigned: 'Nizar'},
   // ];
 
-const [todos, setTodos] = useState([
-  {rowNumber: 1, rowDescription : "play football", rowAssigned: 'Achraf'},
-  {rowNumber: 2, rowDescription : "Learn React", rowAssigned: 'Nizar'},
-]);
+const 
 const addTodo = (description:string, assigned:string) => {
   let rowNumber=0;
 
@@ -29,9 +26,9 @@ const addTodo = (description:string, assigned:string) => {
       rowNumber,
       rowDescription:description,
       rowAssigned:assigned
-  };
+  }
 
-  setTodos([...todos, newTodo]);
+todos.push(newTodo);
 
 }
   return (

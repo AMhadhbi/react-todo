@@ -31,8 +31,6 @@ const addTodo = (description:string, assigned:string) => {
       rowAssigned:assigned
   };
 
-  setTodos([...todos, newTodo]);
-
 }
   return (
   <div className="container mt-5">
